@@ -1,0 +1,242 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.confeti{
+    position: absolute;
+    height: 600px;
+    width: 350px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+}
+
+.confeti img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.hidden{
+    transition:  5s ease-in-out;
+    opacity: 0;
+}
+
+.content{
+    margin:0 auto;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.baloo {
+  font-family: "Baloo Bhai 2", serif;
+  font-optical-sizing: auto;
+
+}
+
+.cont-banner{ 
+    margin: 0 auto;
+    background-image: url("./assets/images/fondo.jpg");
+    height: 600px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 80px 0 90px 0;
+}
+
+.nombre{
+    font-size: 6rem;
+    filter: drop-shadow(#000 3px 3px 3px);
+    text-rendering: optimizeLegibility;
+    color: #fff;
+}
+
+.mensaje-inv{
+    filter: drop-shadow(#000000 3px 3px 3px);
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-rendering: optimizeLegibility;
+    line-height: 2rem;
+    position: relative;
+    color: #fff;
+}
+
+.cont-img{
+    background-image: url("./assets/images/chloe.png");
+    width: 230px;
+    height: 230px;
+    background-color: #ffabd2;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 530px;
+    box-shadow: 3px 3px 10px  #c4c4c47c;
+    background-repeat: no-repeat;
+}
+
+.cont-2{
+    background-color: #E0F2FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 20px 30px 20px;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+}
+
+.dia{
+    color: #696969;
+}
+
+.fecha{
+    text-align: center;  
+}
+
+.hora{
+    color: #696969;
+}
+
+.btn{
+    font-size: 24px;
+    width: 100%;
+    padding: 15px 50px;
+    border-radius: 50px;
+    margin: 10px 0;
+    background-color: #6c53a4;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn > i{
+    margin: 5px 10px 0 0;
+    transform: scale(120%) translate(0, 3px);
+}
+
+.countdown{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #696969;
+    margin:30px 0 10px 0;
+}
+
+.text-confirmar{
+    font-size: 1.7rem;
+    text-align: center;
+    color: #696969;
+    line-height: 2rem;
+    padding: 0 20px;
+    margin: 60px 0 10px 0;
+}
+
+.direccion{
+    background-color: #fff;
+    padding: 30px 10px;
+    font-size: 1.5rem;
+    color: #696969;
+    text-align: center;
+}
+.club{
+    line-height: 2rem;
+    margin: 15px;
+}
+.cont-img-lugar img{
+    width: 100%;
+}
+.ubicacion{
+    color: #696969;
+}
+
+.cont-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    gap: 25px;
+}
+.cont-te-esperamos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #E0F2FE;
+}
+
+.te-esperamos{
+    font-size: 2rem;
+    margin: 20px;
+    color: #696969;
+}
+
+.confirmar{
+    font-size: 1.7rem;
+    color: #696969;
+}
+
+.footer{
+    background-color: #202020;
+    color: #dbdbdb;
+    padding: 30px;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.dev{
+    color: #44BBA4;
+}
+
+/* Estilos del loader */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Spinner animado */
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Ocultar el contenido hasta que cargue */
+  .content {
+    display: none;
+  }
+  
